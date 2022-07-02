@@ -7,11 +7,9 @@ def swap(my_list,index1,index2):
 
 def selection_sort(my_list):
     for i in range(len(my_list)):
-        min = float('inf')
         min_index = i
         for j in range(i,len(my_list)):
-            if my_list[j] < min:
-                min = my_list[j]
+            if my_list[j] < my_list[min_index]:
                 min_index = j
         swap(my_list,i,min_index)
 
